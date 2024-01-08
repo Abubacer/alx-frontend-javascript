@@ -1,3 +1,4 @@
+// returns an array of ids from a list of object.
 function getListStudentIds(getListStudents) {
   if (!Array.isArray(getListStudents)) {
     return [];
