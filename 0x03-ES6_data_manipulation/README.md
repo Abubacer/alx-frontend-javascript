@@ -22,15 +22,15 @@ At the end of this project, we are expected to be able to learn:
 ## Requirements
 
 
-- All your files will be executed on Ubuntu 18.04 LTS using NodeJS 12.11.x
+- All files will be executed on Ubuntu 18.04 LTS using NodeJS 12.11.x
 - Allowed editors: vi, vim, emacs, Visual Studio Code
-- All your files should end with a new line
+- All files should end with a new line
 - A ```README.md``` file, at the root of the folder of the project, is mandatory
-- Your code should use the ```js``` extension
-- Your code will be tested using Jest and the command ```npm run test```
-- Your code will be verified against lint using ESLint
-- Your code needs to pass all the tests and lint. You can verify the entire project running ```npm run full-test```
-- All of your functions must be exported
+- The code should use the ```js``` extension
+- The code will be tested using Jest and the command ```npm run test```
+- The code will be verified against lint using ESLint
+- The code needs to pass all the tests and lint. we can verify the entire project running ```npm run full-test```
+- All functions must be exported
 
 ## Setup
 ### Install NodeJS 12.11.x
@@ -39,6 +39,8 @@ In home directory
 curl -sL https://deb.nodesource.com/setup_12.x -o nodesource_setup.sh
 sudo bash nodesource_setup.sh
 sudo apt install nodejs -y
+```
+
 ```
 $ nodejs -v
 v12.11.1
@@ -73,6 +75,9 @@ Add the following to the project directory:
     "jest": "^24.9.0"
   }
 }
+
+```
+
 ### babel.config.js
 ```
 
@@ -88,6 +93,8 @@ module.exports = {
     ],
   ],
 };
+
+```
 
 ### .eslintrc.js
 ```
@@ -130,9 +137,10 @@ module.exports = {
   ]
 };
 
+```
+
 Don’t forget to run ```$ npm install``` when you have the package.json
 
 
-[Function link](https://github.com/alx-tools/0x1C.c)
 
 </div>
