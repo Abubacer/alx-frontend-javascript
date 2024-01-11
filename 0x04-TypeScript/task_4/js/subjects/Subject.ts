@@ -1,4 +1,4 @@
-// Define a namespace named Subjects
+// Define a Subject class inside a namespace named Subjects.
 namespace Subjects {
     export class Subject {
         teacher: Teacher;
