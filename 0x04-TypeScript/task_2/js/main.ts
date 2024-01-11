@@ -15,15 +15,15 @@ interface TeacherInterface {
 // Define a Director class
 export class Director implements DirectorInterface {
     workFromHome(): string {
-        console.log("Working from home");
+        //console.log("Working from home");
         return "Working from home";
     }
     getCoffeeBreak(): string {
-        console.log("Getting a coffee break");
+        //console.log("Getting a coffee break");
         return "Getting a coffee break";
     }
     workDirectorTasks(): string {
-        console.log("Getting to director tasks");
+        //console.log("Getting to director tasks");
         return "Getting to director tasks";
     }
 }
@@ -31,15 +31,15 @@ export class Director implements DirectorInterface {
 // Define a Teacher class
 export class Teacher implements TeacherInterface {
     workFromHome(): string {
-        console.log("Cannot work from home");
+        //console.log("Cannot work from home");
         return "Cannot work from home";
     }
     getCoffeeBreak(): string {
-        console.log("Cannot have a break");
+        //console.log("Cannot have a break");
         return "Cannot have a break";
     }
     workTeacherTasks(): string {
-        console.log("Getting to work");
+        //console.log("Getting to work");
         return "Getting to work";
     }
 }
@@ -52,6 +52,7 @@ export function createEmployee(salary: number | string): Teacher | Director {
     return new Director();
 }
 
+// Usage example: If you want to test the functions uncomment.
 // console.log(createEmployee(200));
 // console.log(createEmployee(1000));
 // console.log(createEmployee('$500'));
@@ -72,6 +73,7 @@ export function executeWork(employee: TeacherInterface | DirectorInterface): str
     return taskCall;
 }
 
+// Usage example: If you want to test the functions uncomment.
 // executeWork(createEmployee(200));
 // executeWork(createEmployee(1000));
 
@@ -89,5 +91,6 @@ export function teachClass(todayClass: Subjects): string {
     }
 }
 
+// Usage example: If you want to test the functions uncomment.
 // console.log(teachClass('Math'));
 // console.log(teachClass('History'));
